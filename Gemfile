@@ -37,3 +37,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'bundler'
+gem 'spring',        group: :development
+
+#Adding bootstrap
+gem 'bootstrap-sass'
+gem 'validates_formatting_of'
+

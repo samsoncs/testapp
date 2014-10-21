@@ -12,9 +12,9 @@
     <% @communities.each do |community| %>
       <tr>
         <td><%= community.name %></td>
-        <td><%= link_to 'Show', community %></td>
-        <td><%= link_to 'Edit', edit_community_path(community) %></td>
-        <td><%= link_to 'Destroy', community, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= button_to 'Show', community, :class => 'btn btn-info', :method => "get" %></td>
+        <td><%= button_to 'Edit', edit_community_path(community), :class => 'btn btn-danger', :method => "get" %></td>
+        <td><%= button_to 'Destroy', community, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-success', :method => "get" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Community', new_community_path %>
+<%= button_to 'New Community', new_community_path, :class => 'btn btn-info', :method => "get" %>
